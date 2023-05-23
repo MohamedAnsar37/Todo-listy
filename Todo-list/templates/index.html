@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo-List</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+  
+</head>
+<body style="background-image: url('/static/images/back.png')">
+  
+
+    <div class="transparent-box"> 
+  <div class="todo-container">
+    <h2 style="text-align:center">Todo List</h2>
+    <form class="todo-form">
+      <input type="text" placeholder="Enter a task" />
+      <button type="submit">Add Task</button>
+      <button type="submit" id="delete-button">Delete Task</button>
+    </form>
+    <ul class="todo-list">
+      <!-- Todo items will be dynamically added here using JavaScript -->
+    </ul>
+  </div>
+    </div>
+  <footer>
+    <h1 style="text-align:center">Made by Mohamed Ansar</h1>
+  </footer>
+      
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

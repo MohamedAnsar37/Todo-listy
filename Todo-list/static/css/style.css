@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+
+    
+    /* Todo List Styles */
+    .todo-container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      
+    }
+    
+    .todo-container h2 {
+      margin-top: 20px;
+    }
+    
+    .todo-form {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    
+    .todo-form input[type="text"] {
+      flex-grow: 1;
+      padding: 5px;
+    }
+    
+    .todo-form button {
+      margin-left: 10px;
+      padding: 5px 10px;
+    }
+    
+    .todo-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .todo-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    
+    .todo-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .transparent-box {
+        background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (0-1) to control transparency */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .transparent-box .todo-container {
+        max-width: 500px;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      body {
+        background-image: url('back.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+      }
+      button {
+        
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            color: black;
+            width: 200px;
+            margin-bottom: 5px;
+            border-radius: 15px;
+            font-family: cursive;
+        
+      }
+      
+      button:hover{
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation:slidebg 5s linear infinite;
+     }
+
+    
+
+      @media only screen and (max-width: 600px){
+        /* Adjust the max-width value according to your needs */
+  
+        .transparent-box {
+          padding: 10px;
+        }
+  
+        .todo-container {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+  
+        .footer-content {
+          flex-direction: column;
+        }
+        body {
+            background-size: cover;
+          }
+    
+    
+        body {
+          background-image: url('background.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        .transparent-box {
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 20px;
+        }
+    
+        .todo-container {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+    }
